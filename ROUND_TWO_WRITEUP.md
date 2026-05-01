@@ -18,6 +18,8 @@ This version has been reshaped from a polished scrolling experience into a non-l
 
 Each path changes the media, commercial framing, hotspots, proof points, and activation layer. The viewer can explore zones, type a brand name, trigger a takeover state, and jump into deeper 3D or module views without being forced through a slide-like order.
 
+The supporting proof now runs as one Scale -> Energy -> Ownership arc, rather than separate informational sections. The viewer first sees the audience, then feels the property in motion, then imagines brand ownership.
+
 ## Why It Is Not Presentation-Shaped
 
 The experience is organized around buyer intent instead of sequence. A tenant, sponsor, or event partner can enter the property through the business case that matters to them, then move across hotspots, modules, source-backed proof, and the 3D takeover in any order.
@@ -33,6 +35,8 @@ That matters because it changes the sales conversation from abstract inventory i
 ## Media And AI Usage
 
 The experience uses optimized real Mall of America imagery and motion wherever available. AI is used as the creative direction layer for generative atmosphere, cinematic treatment, interaction design, prompt language, and fallback visual systems where official assets do not fully cover the sales story.
+
+For round two, a generated activation concept layer was added. It uses real MOA media as the base, then creates new cinematic concept stills and motion through generative light architecture, crowd-path overlays, media-surface simulation, and AI-authored prompt treatment. This gives the prospect a future-state view of what a partnership could become, without relying on generic stock filler.
 
 All production media is local under `public/media`, so the live experience does not depend on fragile external embeds.
 

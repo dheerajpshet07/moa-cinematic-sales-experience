@@ -35,14 +35,17 @@ npm run start
 - The visual direction uses AI-authored generative prompts and a local media pipeline to avoid broken remote media.
 - Real Mall of America source imagery is kept in `public/media/real`; large raw video source lives in `media_sources` so it is not served publicly.
 - Official MOA leasing imagery and the official sponsorship sizzle are used locally after optimization; external embeds are intentionally avoided so playback remains reliable.
+- The round-two version adds generated activation concept stills and motion in `public/media/ai-*`, built from real MOA media plus generative light architecture, crowd paths, media surfaces, and cinematic prompt treatment.
 - The `scripts/generate_media.py` pipeline creates cinematic poster imagery, module stills, and the autoplay hero video from AI-directed scene prompts.
 - The `scripts/generate_real_media.py` pipeline converts real source media into cinematic, responsive experience assets.
+- The `scripts/generate_ai_concepts.py` pipeline creates the visible generative concept layer used in the Scale -> Energy -> Ownership arc.
 - The built-in image-generation tool was not exposed in this environment, so the project ships a reproducible local asset generator plus prompt documentation in `AI_VISUAL_PROMPTS.md`.
 
 ## Design Decisions
 
 - Video-first opening: a fullscreen muted looping video with a preloaded poster, fast cinematic loader, and CSS fallback so the first viewport never shows a broken frame.
 - Non-linear control: the experience now leads with an interactive command center where a prospect chooses Leasing, Sponsorship, or Events, opens property hotspots, types their brand into a live activation layer, and then jumps into the deeper 3D takeover or commercial modules.
+- Story arc: the proof sections have been consolidated into a Scale -> Energy -> Ownership sequence so the viewer experiences one commercial build instead of stitched informational panels.
 - Emotional hook: the 3D "Place your brand here" takeover lets a sponsor type their own brand, activate crowd/light energy, and picture ownership of the property before the sales ask.
 - Expandability: leasing, sponsorship, events, and access modules are separated so deeper venue, category, or campaign paths can be added without rewriting the core experience.
 - Performance: heavy interactive scenes are lazy-loaded near viewport entry; media is local and compressed for Vercel deployment.

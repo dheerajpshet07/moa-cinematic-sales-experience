@@ -167,6 +167,37 @@ button {
   animation: crowdMove 1.9s linear infinite;
 }
 
+.arc-shell {
+  background:
+    linear-gradient(180deg, rgba(5, 12, 12, 0.78), rgba(8, 5, 4, 0.94)),
+    radial-gradient(circle at 22% 10%, rgba(241, 189, 79, 0.18), transparent 32%),
+    radial-gradient(circle at 82% 20%, rgba(64, 216, 208, 0.16), transparent 34%);
+}
+
+.arc-board {
+  position: relative;
+}
+
+.arc-board::before {
+  content: "";
+  position: absolute;
+  left: clamp(1rem, 5vw, 4rem);
+  right: clamp(1rem, 5vw, 4rem);
+  top: -1.5rem;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(241, 189, 79, 0.55), rgba(64, 216, 208, 0.45), transparent);
+}
+
+.arc-lens {
+  pointer-events: none;
+  position: absolute;
+  inset: -20% -18%;
+  opacity: 0.16;
+  filter: blur(62px);
+  mix-blend-mode: screen;
+  animation: commandLight 8s ease-in-out infinite alternate;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;

@@ -16,3 +16,5 @@ tmp-chrome-profile/
 tmp-edge-profile/
 tmp-video/
 public/media/frames/
+public/media/frames-ai/
+public/media/frames-real/

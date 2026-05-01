@@ -1,8 +1,7 @@
 export const navItems = [
   { id: "impact", label: "Impact" },
   { id: "command", label: "Command" },
-  { id: "property", label: "Property" },
-  { id: "signal", label: "Signal" },
+  { id: "arc", label: "Arc" },
   { id: "retail", label: "Retail" },
   { id: "lifestyle", label: "Lifestyle" },
   { id: "attractions", label: "Attractions" },
