@@ -116,6 +116,57 @@ button {
   padding-bottom: clamp(12rem, 22vw, 18rem);
 }
 
+.command-shell {
+  background:
+    linear-gradient(115deg, rgba(241, 189, 79, 0.15), transparent 34%),
+    linear-gradient(245deg, rgba(64, 216, 208, 0.14), transparent 36%),
+    linear-gradient(180deg, rgba(15, 8, 6, 0.42), rgba(5, 11, 12, 0.7));
+}
+
+.command-stage {
+  isolation: isolate;
+  min-height: clamp(36rem, 72svh, 50rem);
+}
+
+.command-light {
+  pointer-events: none;
+  position: absolute;
+  inset: -14% -18%;
+  opacity: 0.2;
+  mix-blend-mode: screen;
+  filter: blur(58px);
+  transform: skewY(-9deg);
+  animation: commandLight 7s ease-in-out infinite alternate;
+}
+
+.command-hotspot {
+  box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.26);
+  animation: hotspotPulse 2.6s ease-in-out infinite;
+}
+
+.command-crowd {
+  opacity: 0.18;
+  background-image:
+    radial-gradient(circle, rgba(255, 255, 255, 0.92) 0 1.4px, transparent 1.8px),
+    radial-gradient(circle, rgba(241, 189, 79, 0.82) 0 1.1px, transparent 1.7px),
+    radial-gradient(circle, rgba(64, 216, 208, 0.72) 0 1.1px, transparent 1.7px);
+  background-position:
+    0 0,
+    24px 18px,
+    42px 8px;
+  background-size:
+    58px 34px,
+    74px 42px,
+    96px 50px;
+  mask-image: linear-gradient(to top, black, transparent);
+  transition: opacity 420ms ease;
+}
+
+.command-crowd.is-live {
+  opacity: 0.58;
+  animation: crowdMove 1.9s linear infinite;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -398,6 +449,40 @@ button {
   }
 }
 
+@keyframes commandLight {
+  from {
+    transform: translate3d(-3%, -2%, 0) skewY(-9deg);
+  }
+  to {
+    transform: translate3d(4%, 3%, 0) skewY(-5deg);
+  }
+}
+
+@keyframes hotspotPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.22);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes crowdMove {
+  from {
+    background-position:
+      0 0,
+      24px 18px,
+      42px 8px;
+  }
+  to {
+    background-position:
+      58px 0,
+      98px 18px,
+      138px 8px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -427,5 +512,11 @@ button {
 
   .metric-grid {
     grid-template-columns: 1fr;
+  }
+
+  .command-hotspot {
+    max-width: 9rem;
+    white-space: normal;
+    text-align: left;
   }
 }

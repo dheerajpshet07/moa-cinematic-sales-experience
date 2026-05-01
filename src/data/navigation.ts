@@ -1,5 +1,6 @@
 export const navItems = [
   { id: "impact", label: "Impact" },
+  { id: "command", label: "Command" },
   { id: "property", label: "Property" },
   { id: "signal", label: "Signal" },
   { id: "retail", label: "Retail" },

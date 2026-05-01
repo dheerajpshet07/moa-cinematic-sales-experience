@@ -42,7 +42,7 @@ npm run start
 ## Design Decisions
 
 - Video-first opening: a fullscreen muted looping video with a preloaded poster, fast cinematic loader, and CSS fallback so the first viewport never shows a broken frame.
-- Non-linear control: persistent navigation, direct CTAs, module switching, hover reveals, and clickable 3D hotspots let a prospect explore by business intent.
+- Non-linear control: the experience now leads with an interactive command center where a prospect chooses Leasing, Sponsorship, or Events, opens property hotspots, types their brand into a live activation layer, and then jumps into the deeper 3D takeover or commercial modules.
 - Emotional hook: the 3D "Place your brand here" takeover lets a sponsor type their own brand, activate crowd/light energy, and picture ownership of the property before the sales ask.
 - Expandability: leasing, sponsorship, events, and access modules are separated so deeper venue, category, or campaign paths can be added without rewriting the core experience.
 - Performance: heavy interactive scenes are lazy-loaded near viewport entry; media is local and compressed for Vercel deployment.

@@ -1,4 +1,4 @@
-import { ArrowDown, CalendarDays, Handshake, Store } from "lucide-react";
+import { ArrowDown, CalendarDays, Handshake, MapPinned } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -40,9 +40,9 @@ export default function Hero() {
             and live brand moments converge into a single commercial stage.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a className="cta-button" href="#modules">
-              <Store size={18} aria-hidden="true" />
-              Lease here
+            <a className="cta-button" href="#command">
+              <MapPinned size={18} aria-hidden="true" />
+              Choose your path
             </a>
             <a className="ghost-button" href="#takeover">
               <Handshake size={18} aria-hidden="true" />
@@ -88,8 +88,8 @@ export default function Hero() {
             </div>
           </div>
           <a
-            aria-label="Move to property overview"
-            href="#property"
+            aria-label="Move to interactive command center"
+            href="#command"
             className="ml-auto inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/15 bg-white/10 text-white backdrop-blur-xl transition hover:bg-white/18"
           >
             <ArrowDown size={19} aria-hidden="true" />

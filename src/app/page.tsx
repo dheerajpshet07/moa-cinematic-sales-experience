@@ -1,4 +1,5 @@
 import DeferredChrome from "@/components/DeferredChrome";
+import CommandCenter from "@/components/CommandCenter";
 import Hero from "@/components/Hero";
 import LazyExperienceMap from "@/components/LazyExperienceMap";
 import LazyLiveSignal from "@/components/LazyLiveSignal";
@@ -14,6 +15,7 @@ export default function Home() {
       <StaticChrome />
       <DeferredChrome />
       <Hero />
+      <CommandCenter />
       <PropertySection />
       <LazyLiveSignal />
       {storyBeats.map((beat, index) => (
