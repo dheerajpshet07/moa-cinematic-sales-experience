@@ -1,0 +1,34 @@
+{
+  "name": "moa-cinematic-sales-experience",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A cinematic, interactive sales experience for Mall of America.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build --webpack",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "generate:media": "python scripts/generate_real_media.py",
+    "generate:media:fallback": "python scripts/generate_media.py",
+    "qa": "node scripts/qa-smoke.mjs"
+  },
+  "dependencies": {
+    "@react-three/fiber": "latest",
+    "framer-motion": "latest",
+    "lucide-react": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "three": "latest"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "latest",
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/three": "latest",
+    "ffmpeg-static": "latest",
+    "tailwindcss": "latest",
+    "typescript": "latest"
+  }
+}
