@@ -2,11 +2,11 @@
 
 ## Live URL
 
-Replace with the Vercel URL after deployment.
+https://moa-cinematic-sales-experience.vercel.app
 
 ## GitHub
 
-Replace with the GitHub repository URL after upload.
+https://github.com/dheerajpshet07/moa-cinematic-sales-experience
 
 ## What Changed
 
