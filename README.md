@@ -1,4 +1,4 @@
-# Mall of America Cinematic Sales Experience
+# Mall of America
 
 A browser-based, non-linear sales experience for Mall of America. It is designed for leasing, sponsorship, and event-booking conversations where the first impression needs to feel cinematic, premium, and commercially decisive.
 
